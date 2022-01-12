@@ -1,0 +1,63 @@
+@import 'modules/breakpoints.module.scss';
+
+[class*='l-flex'] {
+  display: flex;
+
+  &[class*='--row'] {
+    flex-direction: row;
+  }
+
+  &[class*='--row-reverse'] {
+    flex-direction: row-reverse;
+  }
+
+  &[class*='--column'] {
+    flex-direction: column;
+  }
+
+  &[class*='--column-reverse'] {
+    flex-direction: column-reverse;
+  }
+
+  &[class*='--nowrap'] {
+    flex-wrap: nowrap;
+  }
+
+  &[class*='--wrap'] {
+    flex-wrap: wrap;
+  }
+
+  &[class*='--wrap-reverse'] {
+    flex-wrap: wrap-reverse;
+  }
+
+  &[class*='--middle'] {
+    align-items: center;
+  }
+
+  &[class*='--between'] {
+    justify-content: space-between;
+  }
+
+  &[class*='--center'] {
+    justify-content: center;
+  }
+
+  &[class*='--end'] {
+    justify-content: flex-end;
+  }
+
+  &[class*='--start'] {
+    align-items: flex-start;
+  }
+
+  > [class*='l-flex'][class*='__item'] {
+    &[class*='--grow'] {
+      flex-grow: 1;
+    }
+
+    &[class*='--center-self'] {
+      align-self: center;
+    }
+  }
+}

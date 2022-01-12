@@ -1,0 +1,21 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './flex.scss';
+@import './grid.scss';
+@import './utils.scss';
+
+html {
+  font-size: 62.5%;
+
+  body {
+    margin: 0;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  &,
+  * {
+    box-sizing: border-box;
+  }
+}
